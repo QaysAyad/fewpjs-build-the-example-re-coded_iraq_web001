@@ -5,10 +5,11 @@ const FULL_HEART = '♥'
 
 
 // Your JavaScript code goes here!
+let hide = document.getElementById('modal')
+hide.className = 'hidden'
 document.addEventListener('DOMContentLoaded',function(e){
 
-  let hide = document.getElementById('modal')
-  hide.className = 'hidden'
+
 document.addEventListener('click', function(e){
     if (e.target.classList.contains('like-glyph')){
     mimicServerCall()
